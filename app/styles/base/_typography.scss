@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../fonts/Montserrat-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat-Black';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../../fonts/Montserrat-Black.ttf') format('truetype');
+}
+
+.text-menu {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-type-primary {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #2c6bdc;
+}
+
+.text-type-normal {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+
+  &--bold {
+    font-family: 'Montserrat-Bold';
+    font-weight: 700;
+  }
+
+  &--black {
+    font-family: 'Montserrat-Black';
+    font-weight: 900;
+  }
+}
+
+.text-type-small {
+  font-style: normal;
+  font-size: 9px;
+  line-height: 11px;
+}
+
+.text-type-mini {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.text-type-medium {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text-type-title {
+  font-family: 'Montserrat-Bold';
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+}
+
+.text-title {
+  font-family: 'Montserrat-Bold';
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 38px;
+
+  background: linear-gradient(180deg, #2d51ca 0%, #2c82ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+  border-left: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #da0710 0%, #ca0009 100%);
+  padding-right: 30px;
+  margin-right: 20px;
+  margin-bottom: 45px;
+
+  padding-left: 8px;
+}
+
+.text-family-light {
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+}
+
+.text-family-medium {
+  font-family: 'Montserrat-Medium';
+  font-weight: 500;
+}
+
+.text-family-bold {
+  font-family: 'Montserrat-Bold';
+  font-weight: 700;
+}
+
+.text-family-black {
+  font-family: 'Montserrat-Black';
+  font-weight: 900;
+}

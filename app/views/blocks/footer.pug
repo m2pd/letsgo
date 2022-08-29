@@ -1,0 +1,120 @@
+- 
+    var listMenu1 = [
+        "Giới thiệu",
+        "Về chúng tôi",
+        "Chính sách bảo mật thông tin",
+        "Điều khoản sử dụng dịch vụ",
+        "Cơ chế giải quyết tranh chấp",
+        "Quy chế hoạt động",
+        "Tuyển dụng",
+    ];
+- 
+    var listMenu2 = [
+        "Dành cho Hướng dẫn viên",
+        "Kênh Hướng dẫn viên",
+        "Các loại hình Hướng dẫn viên",
+        "Hướng dẫn đăng tour hoạt động",
+        "Ngôn ngữ",
+        "Tiếng việt",
+    ];
+
+- 
+    var listInfoFooter1 = [
+       {'left': 'Địa chỉ trụ sở', 'right': 'C15 Khu Thương Mại Thuận Việt, Số 319 Đường Lý Thường kiệt,Phường 15, Quận 11, Thành phố Hồ Chí Minh, Việt Nam'},
+       {'left': 'Điện thoại', 'right': '0768071727'},
+       {'left': 'Email', 'right': 'teamlesgos@gmail.com'}
+    ];
+- 
+    var listInfoFooter2 = [
+       {'left': 'Ngày cấp', 'right': '12/05/2020'},
+       {'left': 'Nơi cấp', 'right': 'Sở Kế hoạch & Đầu tư TP. Hồ Chí Minh'},
+    ];
+
+footer#footer.footer
+    .container
+        .footer__body
+            .footer__left
+                .footer__logo
+                    +link('#').icon.item-transform-top
+                        +img('../../images/image 6.png', 'social')
+                .foote__info
+                    p.text-type-normal.mb-4  Du lịch thông minh, kiến tạo hành trình
+                    .info-contact.mb-5
+                        each val in listInfoFooter1
+                            p.mb-3
+                                span.text-type-normal.text-type-normal--bold #{val.left}:
+                                span  #{val.right}
+
+                    p.text-type-normal.text-type-normal--black.mb-4  CÔNG TY TNHH ALPHAS
+                        p.text-type-normal Giấy chứng nhận đăng ký doanh nghiệp Số: 0316265122
+                        each val in listInfoFooter2
+                            p.mb-3
+                                span.text-type-normal.text-type-normal--bold #{val.left}:
+                                span  #{val.right}
+
+            .footer__right
+                .footer__internal
+                    ul.footer__internal--link
+                        each val in listMenu1
+                            li
+                                +link('#').item-transform-top
+                                    span.text-type-normal.text-type-normal--bold #{val}
+                    ul.footer__internal--link
+                         each val in listMenu2
+                            li
+                                +link('#').item-transform-top
+                                    span.text-type-normal.text-type-normal--bold #{val}
+                .footer__media 
+                    .footer__socials 
+                        p.text-type-normal.text-type-normal--bold.label Social
+                        .socials-item 
+                            +link('#').icon.item-transform-top
+                                +img('../../images/image 3.png', 'social')
+                            +link('#').icon.item-transform-top
+                                +img('../../images/image 13.png', 'social')
+                            +link('#').icon.item-transform-top
+                                +img('../../images/image 5.png', 'social')
+                        +link('#').icon--last.item-transform-top
+                            +img('../../images/image 14.jpg', 'social')
+
+                    .footer__application
+                        p.text-type-normal.text-type-normal--bold.label Tải xuống ứng dụng
+                        .application-item 
+                            +link('#').item-transform-top
+                                +img('../../images/image 15.png', 'application')
+                            +link('#').item-transform-top
+                                +img('../../images/image 16.png', 'application')
+        .footer__body
+            .footer__left
+                p.text-type-normal.text-type-normal--black.label  Kênh thanh toán
+                .payment 
+                    .payment__list  
+                        +link('#').payment__item.image-custom.item-transform-top
+                            +img('../../images/image 7.jpg', 'payment')
+                        +link('#').payment__item.image-custom.item-transform-top
+                            +img('../../images/image 8.png', 'payment')
+                        +link('#').payment__item.image-custom.item-transform-top
+                            +img('../../images/image 9.jpg', 'payment')
+                        +link('#').payment__item.image-custom.item-transform-top
+                            +img('../../images/image 10.png', 'payment')
+                        +link('#').payment__item.image-custom.item-transform-top
+                            +img('../../images/image 11.png', 'payment')
+                    .payment__total   
+                        +link('#').payment__item.image-custom.item-transform-top
+                            +img('../../images/image 12.png', 'payment')                        
+            .footer__right 
+                .footer__partner.partner
+                    p.text-type-normal.text-type-normal--bold.label Đối tác chiến lược
+                    .partner__list
+                        +link('#').partner__item.image-custom.item-transform-top
+                            +img('../../images/image 17.jpg', 'partner')
+                        +link('#').partner__item.image-custom.item-transform-top
+                            +img('../../images/image 18.jpg', 'partner')
+                        +link('#').partner__item.image-custom.item-transform-top
+                            +img('../../images/image 19.jpg', 'partner')
+                        +link('#').partner__item.image-custom.item-transform-top
+                            +img('../../images/image 20.png', 'partner')
+                        +link('#').partner__item.image-custom.item-transform-top
+                            +img('../../images/image 21.png', 'partner')
+                        +link('#').partner__item.image-custom.item-transform-top
+                            +img('../../images/image 22.png', 'partner')                        

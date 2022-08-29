@@ -1,0 +1,86 @@
+.header {
+  &__info {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 35px 0 15px;
+  }
+
+  &__body {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+
+  .menu {
+    @include flex(row, space-between, center);
+    list-style: none;
+
+    &__item {
+      @include flex(row, space-between, center);
+      align-items: center;
+
+      &:not(:last-child) {
+        border-right: 2px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(180deg, #267ce8 0%, #4e9fff 100%);
+        padding-right: 30px;
+        margin-right: 20px;
+      }
+
+      &--button {
+        .menu__link {
+          @include flex(row, space-between, center);
+          background: linear-gradient(180deg, #267ce8 0%, #4e9fff 100%);
+          border-radius: 8px;
+          text-fill-color: #fff;
+          -webkit-text-fill-color: #fff;
+          color: #fff;
+          text-align: center;
+          padding: 20px 52px;
+        }
+      }
+    }
+
+    &__link {
+      background: linear-gradient(180deg, #2d51ca 0%, #2c82ed 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      position: relative;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      background-size: 200% 200%;
+      animation: rainbow 2s ease-in-out infinite;
+
+      // &:hover {
+      //   background: linear-gradient(to right, crimson, pink, springgreen);
+      //   -webkit-background-clip: text;
+      //   -webkit-text-fill-color: transparent;
+      //   background-clip: text;
+      //   text-fill-color: transparent;
+      //   color: transparent;
+      // }
+    }
+  }
+
+  .logo {
+    position: relative;
+    padding-right: 10px;
+
+    .icon {
+      font-size: 60px;
+    }
+
+    .badge-item {
+      position: absolute;
+      top: 0;
+      right: 0px;
+    }
+
+    .badge__number {
+      font-size: 18px;
+    }
+  }
+}

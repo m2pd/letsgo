@@ -1,0 +1,33 @@
+.center-item {
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.btn {
+  padding: 0.75rem 4rem;
+
+  &-default {
+    background-color: transparent;
+    border: 1px solid $color-primary;
+  }
+
+  &-small {
+    display: block;
+    width: 100%;
+    padding: 5px 0px;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    border-radius: 8px;
+  }
+
+  &-primary-item {
+    background: linear-gradient(180deg, #267ce8 0%, #4e9fff 100%);
+    border: none;
+
+    p,
+    span {
+      color: #fff;
+    }
+  }
+}

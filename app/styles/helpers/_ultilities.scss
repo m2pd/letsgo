@@ -1,0 +1,20 @@
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.box-shadow-item {
+  box-shadow: 0px 4px 4px #00000040;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}

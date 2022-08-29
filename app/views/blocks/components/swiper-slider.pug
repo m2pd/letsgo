@@ -1,0 +1,40 @@
+-
+    var values = [
+        {'link': '#', 'urlImg':"../../images/gallery_1.png", 'title':"Khách sạn "},
+        {'link': '#', 'urlImg':"../../images/gallery_2.jpg", 'title':"Homestay"},
+        {'link': '#', 'urlImg':"../../images/gallery_3.jpg", 'title':"Resort"},
+        {'link': '#', 'urlImg':"../../images/gallery_4.jpeg", 'title':"Hướng dẫn viên đoàn"},
+        {'link': '#', 'urlImg':"../../images/gallery_5.jpg", 'title':"Hướng dẫn viên cá nhân"},
+        {'link': '#', 'urlImg':"../../images/gallery_2.jpg", 'title':"Du lịch sinh thái, khám phá"},
+        {'link': '#', 'urlImg':"../../images/gallery_3.jpg", 'title':"Hướng dẫn viên theo giờ"},
+        {'link': '#', 'urlImg':"../../images/gallery_4.jpeg", 'title':"Hướng dẫn viên trọn gói"},
+        {'link': '#', 'urlImg':"../../images/gallery_5.jpg", 'title':" Du lịch nghỉ dưỡng"},
+        {'link': '#', 'urlImg':"../../images/gallery_4.jpeg", 'title':"Du lịch văn hóa, lịch sử"},
+        {'link': '#', 'urlImg':"../../images/gallery_3.jpg", 'title':"Khách sạn "},
+        {'link': '#', 'urlImg':"../../images/gallery_1.png", 'title':"Du lịch sinh thái, khám phá"},
+        {'link': '#', 'urlImg':"../../images/gallery_1.png", 'title':"Khách sạn "},
+        {'link': '#', 'urlImg':"../../images/gallery_2.jpg", 'title':"Homestay"},
+        {'link': '#', 'urlImg':"../../images/gallery_3.jpg", 'title':"Resort"},
+        {'link': '#', 'urlImg':"../../images/gallery_4.jpeg", 'title':"Hướng dẫn viên đoàn"},
+        {'link': '#', 'urlImg':"../../images/gallery_5.jpg", 'title':"Hướng dẫn viên cá nhân"},
+        {'link': '#', 'urlImg':"../../images/gallery_2.jpg", 'title':"Du lịch sinh thái, khám phá"},
+        {'link': '#', 'urlImg':"../../images/gallery_3.jpg", 'title':"Hướng dẫn viên theo giờ"},
+        {'link': '#', 'urlImg':"../../images/gallery_4.jpeg", 'title':"Hướng dẫn viên trọn gói"},
+        {'link': '#', 'urlImg':"../../images/gallery_5.jpg", 'title':" Du lịch nghỉ dưỡng"},
+        {'link': '#', 'urlImg':"../../images/gallery_4.jpeg", 'title':"Du lịch văn hóa, lịch sử"},
+        {'link': '#', 'urlImg':"../../images/gallery_3.jpg", 'title':"Khách sạn "},
+        {'link': '#', 'urlImg':"../../images/gallery_1.png", 'title':"Du lịch sinh thái, khám phá"},
+    ];
+.container
+    .swiper-container
+        .swiper-wrapper
+            each val in values
+                .swiper-slide
+                    .item-item.item-transform-top
+                        +gallerxy(val.link, val.urlImg, val.title)
+
+        // Add Pagination
+        .swiper-pagination
+    .center-item.mt-2
+        button.btn.btn-default.item-transform-top(type='button') 
+            p.text-type-primary.text-family-medium XEM THÊM DANH MỤC

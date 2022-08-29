@@ -1,0 +1,95 @@
+mixin link(href)
+	if !href
+		a(href="javascript:void(0)")&attributes(attributes)
+			if block
+				block
+	else
+		a(href=href)&attributes(attributes)
+			if block
+				block
+
+mixin linkMenu(href)
+	if !href
+		a(href="javascript:void(0)")&attributes(attributes).menu__link.text-menu 
+			if block
+				block
+	else
+		a(href=href)&attributes(attributes).menu__link.text-menu 
+			if block
+				block
+
+mixin img(src, alt)
+	if !alt
+		img(src=src, alt="")&attributes(attributes)
+	else
+		img(src=src, alt=alt)&attributes(attributes)
+
+mixin gallerxy(link='#', urlImg="../../images/gallery_1.png", title='Khách sạn')
+	figure
+		+link(link)
+			+img(urlImg)
+	.title
+		a.text-type-primary(href=link)&attributes(attributes)
+			| #{title}
+
+
+mixin gallerxyLocaltion(link='#', urlImg="../../images/gallery_1.png", title='Khách sạn', localtion="Nha Trang")
+	figure
+		+link(link)
+			+img(urlImg)
+	.title
+		a.text-type-primary.text-white(href=link)&attributes(attributes)
+			| #{title}
+		p.text-type-title
+			| #{localtion}
+
+mixin gallerxyFeatureType2(link='#', urlImg="../../images/gallery_1.png", title='Khách sạn', localtion="Nha Trang")
+	.card-item
+		.card-item__top
+			figure
+				+link(link)
+					+img(urlImg)
+			.title
+				p.text-type-normal #{localtion}
+		.card-item__body
+			p.card-item__name.text-type-medium.text-family-bold Trần Phạm Minh Tiến
+			p.card-item__trips
+				small.position.text-type-small.text-family-bold Bình Thuận
+				small.total.text-type-small (+100) chuyến đi
+			p.card-comment.text-type-medium  2 đánh giá
+			.center-item.mt-2
+				button.btn.btn-small.text-family-medium(type='button') 
+					span Xem thêm
+
+mixin gallerxyFeatureType3(link='#', urlImg="../../images/gallery_1.png", title='Khách sạn', localtion="Nha Trang")
+	.card-item
+		.card-item__top
+			figure
+				+link(link)
+					+img(urlImg)
+		.card-item__body
+			p.card-item__name.text-type-medium.text-family-bold Tour Bình Ba Trong Ngày Từ Nha Trang
+			p.card-item__stars
+				i.icon.fa.fa-star(aria-hidden='true')
+				i.icon.fa.fa-star(aria-hidden='true')
+				i.icon.fa.fa-star(aria-hidden='true')
+				i.icon.fa.fa-star(aria-hidden='true')
+				i.icon.fa.fa-star(aria-hidden='true')
+				
+			p.card-item__trips
+				small.time.text-type-small.text-family-bold Thời gian:
+				small.total.text-type-small  5 ngày
+			p.card-comment.text-type-medium  Từ 700.000đ
+
+mixin gallerxyFeatureType4(link='#', urlImg="../../images/gallery_1.png", title='Khách sạn', localtion="Nha Trang")
+	.card-item
+		.card-item__top
+			figure
+				+link(link)
+					+img(urlImg)
+		.card-item__body
+			p.card-item__name.text-type-medium.text-family-bold Tour Bình Ba Trong Ngày Từ Nha Trang
+			p.card-item__description
+				| Bạn đang lên kế hoạch cho một chuyến du lịch cùng bạn bè, người thân, gia đình hay đồng 
+
+

@@ -1,0 +1,167 @@
+.swiper-container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  overflow: visible;
+}
+.item-item {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 200px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  //   flex-direction: column;
+  //   align-items: center;
+  //   justify-content: center;
+  box-shadow: 0px 4px 4px #00000040;
+  border-radius: 8px;
+  padding: 12px 16px;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(180deg, #267ce8 0%, #4e9fff 100%);
+  gap: 16px;
+
+  figure {
+    flex-basis: 110px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+    }
+  }
+
+  .title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    a {
+      font-family: 'Montserrat-Medium';
+      display: block;
+    }
+  }
+}
+
+.swiper-feature {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+//////////////////////// CSS CARD SLIDER SWIPER ////////////////////////
+.card-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  &__body {
+    padding: 0 6px 12px;
+  }
+
+  &__top {
+    position: relative;
+    flex-basis: 219px;
+    box-sizing: border-box;
+
+    figure {
+      height: 100%;
+
+      img {
+        height: 100%;
+        border-radius: 8px;
+      }
+    }
+
+    .title {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #fff;
+    }
+  }
+
+  &__name {
+    color: $color-primary;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    color: #414141;
+  }
+
+  &__trips {
+    color: #050505;
+    margin-bottom: 12px;
+
+    .position {
+      border-right: 2px solid currentColor;
+      padding-right: 4px;
+      margin-right: 4px;
+    }
+  }
+
+  &__stars {
+    color: #ffce31;
+    margin-bottom: 8px;
+  }
+
+  .card-comment {
+    color: #da0710;
+  }
+
+  button {
+    color: $color-primary;
+  }
+}
+
+.swiper-boder-radius {
+  border-radius: 8px;
+}
+
+//////////////////////// OVERRIDE ////////////////////////
+
+.section-feature-guideline-3 {
+  .card-item {
+    &__top {
+      flex-basis: 155px;
+
+      figure {
+        height: 155px;
+      }
+    }
+  }
+}
+
+.section-feature-guideline-4 {
+  .card-item {
+    &__top {
+      flex-basis: 160px;
+      figure {
+        height: 160px;
+      }
+    }
+  }
+  .card-item__name {
+    margin-bottom: 32px;
+  }
+}

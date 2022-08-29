@@ -1,0 +1,69 @@
+extends layout/layout
+
+block vars
+    -title = 'Welcome to Gulp Template workflow'
+    -bodyClass = 'home-page'
+
+
+block container
+    main.main-page
+        .section-hero 
+            .group-hero
+                form
+                    .input-group
+                        input.form-control.form-control-custom(type='text' aria-label='Amount (to the nearest dollar)')
+                        .icon-input
+                            button.btn(type='submit')
+                                span
+                                    i.icon.fa.fa-search(aria-hidden='true')
+                ul.category.category__list
+                    - var list = ["Tour", "Dịch Vụ Lưu Trú","Xe du lịch","Booking guide","Hướng dẫn viên bản địa","Tour giờ chót","Tour thanh lý sang nhượn","Vé và combo du lịch"]
+                        each item in list
+                            li.category__item
+                                +link('#') 
+                                    | #{item}
+        .group-section
+            .section.section-group-banner.group-banner
+                .group-banner__list
+                    .group-banner__item    
+                        +img('../../images/banner-01.jpg','banner 01')
+                    .group-banner__item    
+                        +img('../../images/banner-02.jpg','banner 01')
+            .section.section-tourist
+                - var title = 'my title';
+                include blocks/components/swiper-slider.pug
+            .section.section-feature-location
+                - var titleFearure = 'ĐỊA ĐIỂM NỖI BẬT';
+                - var isPagiantion = false;
+                - var isviewMore = false;
+                include blocks/components/swiper-slider-feature.pug
+            .section.section-feature-guideline
+                - var titleFearure = 'HƯỚNG DẪN VIÊN NỖI BẬT';
+                - var isPagiantion = true;
+                - var isviewMore = true;
+                - var swiperStyle2 = true;
+                include blocks/components/swiper-slider-feature-2.pug
+            .section.hero-banner
+                figure.banner-background
+                    +img('../../images/tcdl-4499 1.jpg','banner')
+                .container
+                    .banner-info
+                        .banner-cotnent
+                            h2.title-banner.text-family-black Tham gia CÙNG TEAM LESGO
+                            p.desc-bannder 
+                                | Team LESGO là một cộng đồng bao gồm các Hướng dẫn viên chuyên nghiệp, Công ty tổ chức và điều hành tour, ngoài ra là cả một cộng đồng thổ địa tại các điểm du lịch nhằm hỗ trợ du khách...
+                        .center-item.mt-2
+                            button.btn.btn-primary-item.item-transform-top(type='button') 
+                                p.text-family-bold Đăng kí ngay
+            .section.section-feature-guideline-3
+                - var titleFearure = 'TOURS VÀ COMBO HẤP DẪN';
+                - var isPagiantion = true;
+                - var isviewMore = true;
+                - var swiperStyle2 = true;
+                include blocks/components/swiper-slider-feature-3.pug
+            .section.section-feature-guideline-4
+                - var titleFearure = 'Tin tức';
+                - var isPagiantion = true;
+                - var isviewMore = true;
+                - var swiperStyle2 = true;
+                include blocks/components/swiper-slider-feature-4.pug

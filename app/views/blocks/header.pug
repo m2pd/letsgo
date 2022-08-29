@@ -1,0 +1,25 @@
+header.header
+    .header___banner
+        +link('/')
+            +img('../../images/banner.jpg','banner')
+
+    .header__body
+        .container    
+            .header__info
+                .logo
+                    +link('/')
+                        +img('../../images/logo.jpg','logo')
+                ul.menu
+                    - var list = ["Kênh hướng dẫn viên", "Đăng ký đối tác Lesgo"]
+                        each item in list
+                            li.menu__item.item-transform-top
+                                +linkMenu('/') 
+                                    | #{item}
+                        li.menu__item.menu__item--button.item-transform-top
+                            +linkMenu('/') 
+                                | Khách đăng nhập
+                .logo
+                    +link('/')
+                        i.icon.fa.fa-shopping-cart(aria-hidden='true')
+                        .badge.badge-pill.badge-danger.badge-item
+                            .badge__number 1

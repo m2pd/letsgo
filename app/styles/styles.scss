@@ -1,0 +1,19 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+
+@import 'base/typography';
+@import 'helpers/ultilities';
+@import 'helpers/reset_bootstrap';
+
+@import 'pages/home';
+
+@import 'layout/structure';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/button';
+@import 'components/swiper-slider';
+
+@import 'vendors/fontawesome';
+@import 'vendors/animated';

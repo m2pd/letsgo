@@ -1,0 +1,47 @@
+-
+    var values = [
+        {'link': '#', 'urlImg':"../../images/LESGO-03 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên ", 'localtion': 'TP. HỒ CHÍ MINH'},
+        {'link': '#', 'urlImg':"../../images/LESGO-04 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên", 'localtion': 'ĐÀ NẴNG'},
+        {'link': '#', 'urlImg':"../../images/LESGO-05 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên", 'localtion': 'HÀ NỘI'},
+    ];
+-
+    var valuesSlider = [
+        {'link': '#', 'urlImg':"../../images/LESGO-03 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên ", 'localtion': 'TP. HỒ CHÍ MINH'},
+        {'link': '#', 'urlImg':"../../images/LESGO-04 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên", 'localtion': 'ĐÀ NẴNG'},
+        {'link': '#', 'urlImg':"../../images/LESGO-05 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên", 'localtion': 'HÀ NỘI'},
+        {'link': '#', 'urlImg':"../../images/LESGO-03 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên ", 'localtion': 'TP. HỒ CHÍ MINH'},
+        {'link': '#', 'urlImg':"../../images/LESGO-04 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên", 'localtion': 'ĐÀ NẴNG'},
+        {'link': '#', 'urlImg':"../../images/LESGO-05 1.jpg", 'title':"42 tuor và 5 hướng dẫn viên", 'localtion': 'HÀ NỘI'},
+    ];
+    
+
+
+.container
+    if titleFearure
+        p.text-title #{titleFearure}
+    else 
+    .location
+        .location__top
+            .location__list
+                each val in values
+                    .location__item.item-transform-top.box-shadow-item
+                        +gallerxyLocaltion(val.link, val.urlImg, val.title, val.localtion)
+        .location__bottom
+            .swiper-feature
+                .swiper-wrapper
+                    each val in valuesSlider
+                        .swiper-slide.item-transform-top
+                            .location__item.item-transform-top.box-shadow-item
+                                +gallerxyLocaltion(val.link, val.urlImg, val.title)
+
+                // Add Pagination
+                if isPagiantion
+                    .swiper-pagination
+                else 
+                    
+                .swiper-button-next
+                .swiper-button-prev
+            if isviewMore
+                .center-item.mt-2
+                    button.btn.btn-default.item-transform-top(type='button') 
+                        p.text-type-primary.text-family-medium XEM THÊM DANH MỤC
