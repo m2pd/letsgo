@@ -66,6 +66,10 @@
 .swiper-feature {
   position: relative;
   padding-bottom: 80px;
+
+  @include maxWidth(992px) {
+    padding-bottom: 40px;
+  }
 }
 
 //////////////////////// CSS CARD SLIDER SWIPER ////////////////////////
@@ -163,5 +167,15 @@
   }
   .card-item__name {
     margin-bottom: 32px;
+  }
+}
+
+@include maxWidth(992px) {
+  .location__item .title {
+    bottom: 2px;
+
+    a {
+      margin-bottom: 0;
+    }
   }
 }

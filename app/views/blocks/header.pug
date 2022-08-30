@@ -5,21 +5,44 @@ header.header
 
     .header__body
         .container    
-            .header__info
-                .logo
-                    +link('/')
-                        +img('../../images/logo.jpg','logo')
-                ul.menu
-                    - var list = ["Kênh hướng dẫn viên", "Đăng ký đối tác Lesgo"]
-                        each item in list
-                            li.menu__item.item-transform-top
+            //- .header__info
+            //-     .logo
+            //-         +link('/')
+            //-             +img('../../images/logo.jpg','logo')
+            //-     ul.menu
+            //-         - var list = ["Kênh hướng dẫn viên", "Đăng ký đối tác Lesgo"]
+            //-             each item in list
+            //-                 li.menu__item.item-transform-top
+            //-                     +linkMenu('/') 
+            //-                         | #{item}
+            //-             li.menu__item.menu__item--button.item-transform-top
+            //-                 +linkMenu('/') 
+            //-                     | Khách đăng nhập
+            //-     .logo
+            //-         +link('/')
+            //-             i.icon.fa.fa-shopping-cart(aria-hidden='true')
+            //-             .badge.badge-pill.badge-danger.badge-item
+            //-                 .badge__number 1
+            
+            nav.navbar.navbar-expand-lg.navbar-light.header__info
+                //- a.navbar-brand(href='#').logo
+                +link('/').navbar-brand.logo
+                    +img('../../images/logo.jpg','logo')
+                button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarNav.collapse.navbar-collapse.navbar-light.bg-light
+                    ul.menu
+                        - var list = ["Kênh hướng dẫn viên", "Đăng ký đối tác Lesgo"]
+                            each item in list
+                                li.menu__item.menu__item--border.item-transform-top.text-family-bold 
+                                    +linkMenu('/') 
+                                        | #{item}
+                            li.menu__item.menu__item--button.item-transform-top.text-family-bold 
                                 +linkMenu('/') 
-                                    | #{item}
-                        li.menu__item.menu__item--button.item-transform-top
-                            +linkMenu('/') 
-                                | Khách đăng nhập
-                .logo
-                    +link('/')
-                        i.icon.fa.fa-shopping-cart(aria-hidden='true')
-                        .badge.badge-pill.badge-danger.badge-item
-                            .badge__number 1
+                                    | Khách đăng nhập
+                            li.menu__item
+                                .logo
+                                    +link('/')
+                                        i.icon.fa.fa-shopping-cart(aria-hidden='true')
+                                        .badge.badge-pill.badge-danger.badge-item
+                                            .badge__number 1

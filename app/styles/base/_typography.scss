@@ -37,6 +37,14 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  @include maxWidth(1260px) {
+    font-size: 18px;
+  }
+
+  @include maxWidth(1180px) {
+    font-size: 16px;
+  }
 }
 
 .text-type-primary {
@@ -46,6 +54,11 @@
   line-height: 23px;
   text-align: center;
   color: #2c6bdc;
+
+  @include maxWidth(992px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .text-type-normal {
@@ -89,6 +102,11 @@
   font-weight: 700;
   font-size: 31px;
   line-height: 38px;
+
+  @include maxWidth(992px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
 .text-title {
@@ -109,8 +127,23 @@
   padding-right: 30px;
   margin-right: 20px;
   margin-bottom: 45px;
-
   padding-left: 8px;
+
+  @include maxWidth(992px) {
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-right: 0;
+    font-size: 22px;
+  }
+
+  @include maxWidth(640px) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  @include maxWidth(480px) {
+    font-size: 22px;
+  }
 }
 
 .text-family-light {

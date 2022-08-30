@@ -1,5 +1,5 @@
 body {
-  max-width: 1465px;
+  max-width: 1440px;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
 
@@ -10,15 +10,76 @@ body {
 }
 
 .container {
-  margin-right: 10px;
-  margin-left: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
-@include minWidth(1200px) {
+// @include minWidth(360px) {
+//   .container {
+//     max-width: 340px;
+//   }
+// }
+// @include minWidth(500px) {
+//   .container {
+//     max-width: 480px;
+//   }
+// }
+// @include minWidth(768px) {
+//   .container {
+//     max-width: 740px;
+//   }
+// }
+
+// @include minWidth(991px) {
+//   .container {
+//     max-width: 980px;
+//   }
+// }
+
+// @include minWidth(1260px) {
+//   .container {
+//     max-width: 1200px;
+//   }
+// }
+
+@include minWidth(320px) {
   .container {
-    // max-width: 1360px;
+    width: 90%;
+  }
+}
+@include minWidth(1180px) {
+  .container {
+    max-width: 1160px;
+  }
+}
+@include minWidth(1260px) {
+  .container {
+    max-width: 1240px;
+  }
+}
+@include minWidth(1300px) {
+  .container {
     max-width: 1280px;
   }
 }
+
+// /*Ipad ngang(1024 x 768)*/
+// @media screen and (max-width: 1024px){
+
+// }
+// /*Ipad dọc(768 x 1024)*/
+// @media screen and (max-width: 768px){
+
+// }
+// /*Tablet nhỏ(480 x 640)*/
+// @media screen and (max-width: 480px){
+
+// }
+// /*Iphone(480 x 640)*/
+// @media screen and (max-width: 320px){
+
+// }
+// /*Smart phone nhỏ*/
+// @media screen and (max-width: 240px){
+
+// }
