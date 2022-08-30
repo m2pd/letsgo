@@ -166,6 +166,54 @@ window.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  var swiper = new Swiper('.section-feature-guideline-5 .swiper-container', {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: '.section-feature-guideline-5  .swiper-container .swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl:
+        '.section-feature-guideline-5  .swiper-container .swiper-button-next',
+      prevEl:
+        '.section-feature-guideline-5  .swiper-container .swiper-button-prev',
+    },
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        slidesPerColumn: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerColumn: 1,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 25,
+      },
+    },
+  });
+
   var swiperItem = new Swiper('.swiper-feature', {
     slidesPerView: 4,
     slidesPerGroup: 4,
