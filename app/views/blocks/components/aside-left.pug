@@ -1,0 +1,84 @@
+if titleAside 
+    -var titleAside = 'Địa điểm'
+
+if !listDataAside
+    - 
+        var listDataAside = [
+            'Miền Nam',
+            'Miền Bắc',
+            'Miền Trung',
+            'Mũi Né',
+            'Nha Trang',
+            'Phú Quốc',
+        ]
+
+if !listDataAside2
+    - 
+        var listDataAside2 = [
+            'Food Tours 1',
+            'Hotel Booking',
+            'Nightlife Bar',
+            'Food Restaurant',
+            'City Tours',
+            'Phú Quốc',
+        ]
+
+if !listDataAside3
+    - 
+        var listDataAside3 = [
+            'Máy bay',
+            'Xe bus',
+            'Tàu Thủy',
+            'Ô tô',
+        ]
+
+if !listDataAside4
+    - 
+        var listDataAside4 = [
+            'Nhỏ hơn 3 tiếng',
+            'Nữa ngày',
+            'Cả ngày',
+            'Chuyến đi dài ngày'
+        ]
+
+aside.aside-item.box-shadow-item.box-border-item
+    p.text-title Địa điểm
+    .list-checkboxes
+        each val,index in listDataAside
+            .checkboxes
+                input(id="ckb" + index, type='checkbox').ckb.ckb-primary
+                label(for='ckb' + index)
+                    span.text-type-big.text-family-medium #{val}
+
+    svg.icon(width='37' height='37' viewbox='0 0 37 37' fill='none' xmlns='http://www.w3.org/2000/svg')
+        path(d='M26.0396 2.5396L28.8792 5.37918L24.61 9.60918C23.8463 10.3729 23.8463 11.6263 24.61 12.39C25.3738 13.1538 26.6271 13.1538 27.3909 12.39L31.6209 8.12085L34.4604 10.9604C34.5985 11.0958 34.7735 11.1872 34.9634 11.2232C35.1534 11.2592 35.3497 11.2382 35.5277 11.1628C35.7057 11.0874 35.8575 10.961 35.9638 10.7996C36.07 10.6381 36.1262 10.4487 36.125 10.2554V1.85418C36.125 1.30585 35.6942 0.875017 35.1459 0.875017H26.7446C26.5513 0.873881 26.362 0.929995 26.2005 1.03629C26.039 1.14258 25.9126 1.29429 25.8372 1.4723C25.7618 1.65031 25.7408 1.84665 25.7768 2.03659C25.8128 2.22652 25.9043 2.40155 26.0396 2.5396ZM2.5396 10.9604L5.37918 8.12085L9.60918 12.39C10.3729 13.1538 11.6263 13.1538 12.39 12.39C13.1538 11.6263 13.1538 10.3729 12.39 9.60918L8.12085 5.37918L10.9604 2.5396C11.0958 2.40155 11.1872 2.22652 11.2232 2.03659C11.2592 1.84665 11.2382 1.65031 11.1628 1.4723C11.0874 1.29429 10.961 1.14258 10.7996 1.03629C10.6381 0.929995 10.4487 0.873881 10.2554 0.875017H1.85418C1.30585 0.875017 0.875017 1.30585 0.875017 1.85418V10.2554C0.875017 11.1367 1.93252 11.5675 2.5396 10.9604ZM10.9604 34.4604L8.12085 31.6209L12.39 27.3909C13.1538 26.6271 13.1538 25.3738 12.39 24.61C11.6263 23.8463 10.3729 23.8463 9.60918 24.61L5.37918 28.8792L2.5396 26.0396C2.40155 25.9043 2.22652 25.8128 2.03659 25.7768C1.84665 25.7408 1.65031 25.7618 1.4723 25.8372C1.29429 25.9126 1.14258 26.039 1.03629 26.2005C0.929995 26.362 0.873881 26.5513 0.875017 26.7446V35.1459C0.875017 35.6942 1.30585 36.125 1.85418 36.125H10.2554C10.4487 36.1262 10.6381 36.07 10.7996 35.9638C10.961 35.8575 11.0874 35.7057 11.1628 35.5277C11.2382 35.3497 11.2592 35.1534 11.2232 34.9634C11.1872 34.7735 11.0958 34.5985 10.9604 34.4604ZM34.4604 26.0396L31.6209 28.8792L27.3909 24.61C26.6271 23.8463 25.3738 23.8463 24.61 24.61C23.8463 25.3738 23.8463 26.6271 24.61 27.3909L28.8792 31.6209L26.0396 34.4604C25.9043 34.5985 25.8128 34.7735 25.7768 34.9634C25.7408 35.1534 25.7618 35.3497 25.8372 35.5277C25.9126 35.7057 26.039 35.8575 26.2005 35.9638C26.362 36.07 26.5513 36.1262 26.7446 36.125H35.1459C35.6942 36.125 36.125 35.6942 36.125 35.1459V26.7446C36.1262 26.5513 36.07 26.362 35.9638 26.2005C35.8575 26.039 35.7057 25.9126 35.5277 25.8372C35.3497 25.7618 35.1534 25.7408 34.9634 25.7768C34.7735 25.8128 34.5985 25.9043 34.4604 26.0396Z' fill='#2C6BDC')
+
+aside.aside-item.box-shadow-item.box-border-item
+    p.text-title Du lịch
+    .list-checkboxes
+        each val,index in listDataAside2
+            .checkboxes
+                input(id="ckb-2-" + index, type='checkbox').ckb.ckb-primary
+                label(for='ckb-2-' + index)
+                    span.text-type-big.text-family-medium #{val}
+
+aside.aside-item.box-shadow-item.box-border-item
+    p.text-title Du lịch
+    .list-checkboxes
+        each val,index in listDataAside3
+            .checkboxes
+                input(id="ckb-3-" + index, type='checkbox').ckb.ckb-primary
+                label(for='ckb-3-' + index)
+                    span.text-type-big.text-family-medium #{val}
+
+aside.aside-item.box-shadow-item.box-border-item
+    p.text-title Du lịch
+    .list-checkboxes
+        each val,index in listDataAside4
+            .checkboxes
+                input(id="ckb-4-" + index, type='checkbox').ckb.ckb-primary
+                label(for='ckb-4-' + index)
+                    span.text-type-big.text-family-medium #{val}
+
+
+

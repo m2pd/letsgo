@@ -98,6 +98,19 @@
   line-height: 15px;
 }
 
+.text-type-big {
+  font-style: normal;
+  font-size: 21px;
+  line-height: 26px;
+
+  @include maxWidth(992px) {
+    font-size: 18px;
+  }
+  @include maxWidth(768px) {
+    font-size: 16px;
+  }
+}
+
 .text-type-medium {
   font-style: normal;
   font-size: 16px;

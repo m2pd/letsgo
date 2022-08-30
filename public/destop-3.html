@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><![endif]-->
+    <title>Welcome to Gulp Template workflow</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="home-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header___banner"><a href="/"><img src="../../images/banner.jpg" alt="banner"/></a>
+        </div>
+        <div class="header__body">
+          <div class="container">   
+            <nav class="navbar navbar-expand-lg navbar-light header__info"><a class="navbar-brand logo" href="/"><img src="../../images/logo.jpg" alt="logo"/></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse navbar-light bg-light" id="navbarNav">
+                <ul class="menu">
+                  <li class="menu__item menu__item--border item-transform-top text-family-bold"> <a class="menu__link text-menu" href="/">  Kênh hướng dẫn viên</a>
+                  </li>
+                  <li class="menu__item menu__item--border item-transform-top text-family-bold"> <a class="menu__link text-menu" href="/">  Đăng ký đối tác Lesgo</a>
+                  </li>
+                  <li class="menu__item menu__item--button item-transform-top text-family-bold"> <a class="menu__link text-menu" href="/"> 
+                       Khách đăng nhập</a>
+                  </li>
+                  <li class="menu__item">
+                    <div class="logo"><a href="/"><i class="icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <div class="badge badge-pill badge-danger badge-item">
+                          <div class="badge__number">1</div>
+                        </div></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main-page page-search">
+        <div class="section-hero"> 
+          <div class="group-hero">
+            <form>
+              <div class="input-group">
+                <input class="form-control form-control-custom" type="text" aria-label="Amount (to the nearest dollar)">
+                <div class="icon-input">
+                  <button class="btn" type="submit"><span><i class="icon fa fa-search" aria-hidden="true"></i></span></button>
+                </div>
+              </div>
+            </form>
+            <ul class="category category__list">
+              <li class="category__item"><a href="#"> Tour</a>
+              </li>
+              <li class="category__item"><a href="#"> Dịch Vụ Lưu Trú</a>
+              </li>
+              <li class="category__item"><a href="#"> Xe du lịch</a>
+              </li>
+              <li class="category__item"><a href="#"> Booking guide</a>
+              </li>
+              <li class="category__item"><a href="#"> Hướng dẫn viên bản địa</a>
+              </li>
+              <li class="category__item"><a href="#"> Tour giờ chót</a>
+              </li>
+              <li class="category__item"><a href="#"> Tour thanh lý sang nhượn</a>
+              </li>
+              <li class="category__item"><a href="#"> Vé và combo du lịch</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="banner-hero hero">
+          <figure class="hero__background"><img src="../../images/Vinh-Ha-Long-Thong-tin-tong-hop-can-biet-930x540 1.jpg" alt="Việt Nam"/>
+          </figure>
+          <div class="hero__content">
+            <h2 class="hero__title text-family-bold">Việt Nam</h2>
+            <p class="hero__desc text-type-big">Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt.</p>
+          </div>
+        </div>
+        <div class="section-search"> 
+          <div class="container">
+            <div class="section-search__body"> 
+              <div class="section-search__aside">
+                <aside class="aside-item box-shadow-item box-border-item">
+                  <p class="text-title">Địa điểm</p>
+                  <div class="list-checkboxes">
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb0" type="checkbox">
+                      <label for="ckb0"><span class="text-type-big text-family-medium">Miền Nam</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb1" type="checkbox">
+                      <label for="ckb1"><span class="text-type-big text-family-medium">Miền Bắc</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb2" type="checkbox">
+                      <label for="ckb2"><span class="text-type-big text-family-medium">Miền Trung</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb3" type="checkbox">
+                      <label for="ckb3"><span class="text-type-big text-family-medium">Mũi Né</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb4" type="checkbox">
+                      <label for="ckb4"><span class="text-type-big text-family-medium">Nha Trang</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb5" type="checkbox">
+                      <label for="ckb5"><span class="text-type-big text-family-medium">Phú Quốc</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb6" type="checkbox">
+                      <label for="ckb6"><span class="text-type-big text-family-medium">Tây Nguyên</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb7" type="checkbox">
+                      <label for="ckb7"><span class="text-type-big text-family-medium">Vũng Tàu</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb8" type="checkbox">
+                      <label for="ckb8"><span class="text-type-big text-family-medium">Đà Lạt</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb9" type="checkbox">
+                      <label for="ckb9"><span class="text-type-big text-family-medium">Đà Nẵng</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb10" type="checkbox">
+                      <label for="ckb10"><span class="text-type-big text-family-medium">Côn Đảo</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb11" type="checkbox">
+                      <label for="ckb11"><span class="text-type-big text-family-medium">Hà Giang</span></label>
+                    </div>
+                  </div>
+                  <svg class="icon" width="37" height="37" viewbox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.0396 2.5396L28.8792 5.37918L24.61 9.60918C23.8463 10.3729 23.8463 11.6263 24.61 12.39C25.3738 13.1538 26.6271 13.1538 27.3909 12.39L31.6209 8.12085L34.4604 10.9604C34.5985 11.0958 34.7735 11.1872 34.9634 11.2232C35.1534 11.2592 35.3497 11.2382 35.5277 11.1628C35.7057 11.0874 35.8575 10.961 35.9638 10.7996C36.07 10.6381 36.1262 10.4487 36.125 10.2554V1.85418C36.125 1.30585 35.6942 0.875017 35.1459 0.875017H26.7446C26.5513 0.873881 26.362 0.929995 26.2005 1.03629C26.039 1.14258 25.9126 1.29429 25.8372 1.4723C25.7618 1.65031 25.7408 1.84665 25.7768 2.03659C25.8128 2.22652 25.9043 2.40155 26.0396 2.5396ZM2.5396 10.9604L5.37918 8.12085L9.60918 12.39C10.3729 13.1538 11.6263 13.1538 12.39 12.39C13.1538 11.6263 13.1538 10.3729 12.39 9.60918L8.12085 5.37918L10.9604 2.5396C11.0958 2.40155 11.1872 2.22652 11.2232 2.03659C11.2592 1.84665 11.2382 1.65031 11.1628 1.4723C11.0874 1.29429 10.961 1.14258 10.7996 1.03629C10.6381 0.929995 10.4487 0.873881 10.2554 0.875017H1.85418C1.30585 0.875017 0.875017 1.30585 0.875017 1.85418V10.2554C0.875017 11.1367 1.93252 11.5675 2.5396 10.9604ZM10.9604 34.4604L8.12085 31.6209L12.39 27.3909C13.1538 26.6271 13.1538 25.3738 12.39 24.61C11.6263 23.8463 10.3729 23.8463 9.60918 24.61L5.37918 28.8792L2.5396 26.0396C2.40155 25.9043 2.22652 25.8128 2.03659 25.7768C1.84665 25.7408 1.65031 25.7618 1.4723 25.8372C1.29429 25.9126 1.14258 26.039 1.03629 26.2005C0.929995 26.362 0.873881 26.5513 0.875017 26.7446V35.1459C0.875017 35.6942 1.30585 36.125 1.85418 36.125H10.2554C10.4487 36.1262 10.6381 36.07 10.7996 35.9638C10.961 35.8575 11.0874 35.7057 11.1628 35.5277C11.2382 35.3497 11.2592 35.1534 11.2232 34.9634C11.1872 34.7735 11.0958 34.5985 10.9604 34.4604ZM34.4604 26.0396L31.6209 28.8792L27.3909 24.61C26.6271 23.8463 25.3738 23.8463 24.61 24.61C23.8463 25.3738 23.8463 26.6271 24.61 27.3909L28.8792 31.6209L26.0396 34.4604C25.9043 34.5985 25.8128 34.7735 25.7768 34.9634C25.7408 35.1534 25.7618 35.3497 25.8372 35.5277C25.9126 35.7057 26.039 35.8575 26.2005 35.9638C26.362 36.07 26.5513 36.1262 26.7446 36.125H35.1459C35.6942 36.125 36.125 35.6942 36.125 35.1459V26.7446C36.1262 26.5513 36.07 26.362 35.9638 26.2005C35.8575 26.039 35.7057 25.9126 35.5277 25.8372C35.3497 25.7618 35.1534 25.7408 34.9634 25.7768C34.7735 25.8128 34.5985 25.9043 34.4604 26.0396Z" fill="#2C6BDC"></path>
+                  </svg>
+                </aside>
+                <aside class="aside-item box-shadow-item box-border-item">
+                  <p class="text-title">Du lịch</p>
+                  <div class="list-checkboxes">
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-2-0" type="checkbox">
+                      <label for="ckb-2-0"><span class="text-type-big text-family-medium">Food Tours 1</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-2-1" type="checkbox">
+                      <label for="ckb-2-1"><span class="text-type-big text-family-medium">Hotel Booking</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-2-2" type="checkbox">
+                      <label for="ckb-2-2"><span class="text-type-big text-family-medium">Nightlife Bar</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-2-3" type="checkbox">
+                      <label for="ckb-2-3"><span class="text-type-big text-family-medium">Food Restaurant</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-2-4" type="checkbox">
+                      <label for="ckb-2-4"><span class="text-type-big text-family-medium">City Tours</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-2-5" type="checkbox">
+                      <label for="ckb-2-5"><span class="text-type-big text-family-medium">Phú Quốc</span></label>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="aside-item box-shadow-item box-border-item">
+                  <p class="text-title">Du lịch</p>
+                  <div class="list-checkboxes">
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-3-0" type="checkbox">
+                      <label for="ckb-3-0"><span class="text-type-big text-family-medium">Máy bay</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-3-1" type="checkbox">
+                      <label for="ckb-3-1"><span class="text-type-big text-family-medium">Xe bus</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-3-2" type="checkbox">
+                      <label for="ckb-3-2"><span class="text-type-big text-family-medium">Tàu Thủy</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-3-3" type="checkbox">
+                      <label for="ckb-3-3"><span class="text-type-big text-family-medium">Ô tô</span></label>
+                    </div>
+                  </div>
+                </aside>
+                <aside class="aside-item box-shadow-item box-border-item">
+                  <p class="text-title">Du lịch</p>
+                  <div class="list-checkboxes">
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-4-0" type="checkbox">
+                      <label for="ckb-4-0"><span class="text-type-big text-family-medium">Nhỏ hơn 3 tiếng</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-4-1" type="checkbox">
+                      <label for="ckb-4-1"><span class="text-type-big text-family-medium">Nữa ngày</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-4-2" type="checkbox">
+                      <label for="ckb-4-2"><span class="text-type-big text-family-medium">Cả ngày</span></label>
+                    </div>
+                    <div class="checkboxes">
+                      <input class="ckb ckb-primary" id="ckb-4-3" type="checkbox">
+                      <label for="ckb-4-3"><span class="text-type-big text-family-medium">Chuyến đi dài ngày</span></label>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+              <div class="section-search__data">
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+                <div class="card-item isBorver &amp;&amp; box-border-item isBoxShadow &amp;&amp; box-shadow-item">
+                  <div class="card-item__top">
+                    <figure><a href="#"><img src="../../images/LESGO-03 1.jpg" alt=""/></a>
+                    </figure>
+                  </div>
+                  <div class="card-item__body">
+                    <p class="card-item__name text-type-medium text-family-bold">Tour Bình Ba Trong Ngày Từ Nha Trang</p>
+                    <p class="card-item__stars"><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i><i class="icon fa fa-star" aria-hidden="true"></i></p>
+                    <p class="card-item__trips"><small class="time text-type-small text-family-bold">Thời gian:</small><small class="total text-type-small"> 5 ngày</small></p>
+                    <p class="card-comment text-type-medium"> Từ 700.000đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">9</a></li>
+                  <li class="page-item"><a class="page-link" href="#">10</a></li>
+                  <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="section-more-info"> 
+          <div class="container">
+            <p class="text-title">Cẩm nang du lịch Cung cấp thông tin mới về du lịch</p>
+            <p class="text-type-big text-desc">
+               LẠNG SƠNBản Lân Đặt dường như bị bỏ quên giữa dòng chảy đô thị hóa, con đường duy nhất đến đây băng qua núi rừng hiểm trở khoảng hai tiếng.</p><br>
+            <p class="text-type-big text-desc">
+               Dịp lễ nào cũng vậy, dường như chúng ta đã quá quen thuộc với từ "thất thủ", "đông nghịt", "chen chúc"... Cả năm chỉ có vài dịp gia đình du lịch cùng nhau, những tâm hồn ưa xê dịch như chúng tôi lên kế hoạch về một vùng đất mới, một nơi mà mọi thứ còn nguyên sơ, thuần khiết và đẹp ngỡ như trong cổ tích.</p>
+          </div>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="footer__body">
+            <div class="footer__left">
+              <div class="footer__logo"><a class="icon item-transform-top" href="#"><img src="../../images/image 6.png" alt="social"/></a>
+              </div>
+              <div class="foote__info">
+                <p class="text-type-normal mb-4"> Du lịch thông minh, kiến tạo hành trình</p>
+                <div class="info-contact mb-5">
+                  <p class="mb-3"><span class="text-type-normal text-type-normal--bold">Địa chỉ trụ sở:</span><span> C15 Khu Thương Mại Thuận Việt, Số 319 Đường Lý Thường kiệt,Phường 15, Quận 11, Thành phố Hồ Chí Minh, Việt Nam</span></p>
+                  <p class="mb-3"><span class="text-type-normal text-type-normal--bold">Điện thoại:</span><span> 0768071727</span></p>
+                  <p class="mb-3"><span class="text-type-normal text-type-normal--bold">Email:</span><span> teamlesgos@gmail.com</span></p>
+                </div>
+                <p class="text-type-normal text-type-normal--black mb-4"> CÔNG TY TNHH ALPHAS
+                  <p class="text-type-normal">Giấy chứng nhận đăng ký doanh nghiệp Số: 0316265122</p>
+                  <p class="mb-3"><span class="text-type-normal text-type-normal--bold">Ngày cấp:</span><span> 12/05/2020</span></p>
+                  <p class="mb-3"><span class="text-type-normal text-type-normal--bold">Nơi cấp:</span><span> Sở Kế hoạch &amp; Đầu tư TP. Hồ Chí Minh</span></p>
+                </p>
+              </div>
+            </div>
+            <div class="footer__right">
+              <div class="footer__internal">
+                <ul class="footer__internal--link">
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Giới thiệu</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Về chúng tôi</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Chính sách bảo mật thông tin</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Điều khoản sử dụng dịch vụ</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Cơ chế giải quyết tranh chấp</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Quy chế hoạt động</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Tuyển dụng</span></a>
+                  </li>
+                </ul>
+                <ul class="footer__internal--link">
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Dành cho Hướng dẫn viên</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Kênh Hướng dẫn viên</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Các loại hình Hướng dẫn viên</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Hướng dẫn đăng tour hoạt động</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Ngôn ngữ</span></a>
+                  </li>
+                  <li><a class="item-transform-top" href="#"><span class="text-type-normal text-type-normal--bold">Tiếng việt</span></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__media"> 
+                <div class="footer__socials"> 
+                  <p class="text-type-normal text-type-normal--bold label">Social</p>
+                  <div class="socials-item"> <a class="icon item-transform-top" href="#"><img src="../../images/image 3.png" alt="social"/></a><a class="icon item-transform-top" href="#"><img src="../../images/image 13.png" alt="social"/></a><a class="icon item-transform-top" href="#"><img src="../../images/image 5.png" alt="social"/></a>
+                  </div><a class="icon--last item-transform-top" href="#"><img src="../../images/image 14.jpg" alt="social"/></a>
+                </div>
+                <div class="footer__application">
+                  <p class="text-type-normal text-type-normal--bold label">Tải xuống ứng dụng</p>
+                  <div class="application-item"> <a class="item-transform-top" href="#"><img src="../../images/image 15.png" alt="application"/></a><a class="item-transform-top" href="#"><img src="../../images/image 16.png" alt="application"/></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__body footer__body--last">
+            <div class="footer__left">
+              <p class="text-type-normal text-type-normal--black label"> Kênh thanh toán</p>
+              <div class="payment"> 
+                <div class="payment__list"> <a class="payment__item image-custom item-transform-top" href="#"><img src="../../images/image 7.jpg" alt="payment"/></a><a class="payment__item image-custom item-transform-top" href="#"><img src="../../images/image 8.png" alt="payment"/></a><a class="payment__item image-custom item-transform-top" href="#"><img src="../../images/image 9.jpg" alt="payment"/></a><a class="payment__item image-custom item-transform-top" href="#"><img src="../../images/image 10.png" alt="payment"/></a><a class="payment__item image-custom item-transform-top" href="#"><img src="../../images/image 11.png" alt="payment"/></a>
+                </div>
+                <div class="payment__total">  <a class="payment__item image-custom item-transform-top" href="#"><img src="../../images/image 12.png" alt="payment"/></a>
+                </div>
+              </div>
+            </div>
+            <div class="footer__right"> 
+              <div class="footer__partner partner">
+                <p class="text-type-normal text-type-normal--bold label">Đối tác chiến lược</p>
+                <div class="partner__list"><a class="partner__item image-custom item-transform-top" href="#"><img src="../../images/image 17.jpg" alt="partner"/></a><a class="partner__item image-custom item-transform-top" href="#"><img src="../../images/image 18.jpg" alt="partner"/></a><a class="partner__item image-custom item-transform-top" href="#"><img src="../../images/image 19.jpg" alt="partner"/></a><a class="partner__item image-custom item-transform-top" href="#"><img src="../../images/image 20.png" alt="partner"/></a><a class="partner__item image-custom item-transform-top" href="#"><img src="../../images/image 21.png" alt="partner"/></a><a class="partner__item image-custom item-transform-top" href="#"><img src="../../images/image 22.png" alt="partner"/></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

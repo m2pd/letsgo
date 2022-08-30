@@ -1,0 +1,15 @@
+if !titleHero
+    -var titleHero = 'Việt Nam'
+
+if !descHero
+    -var descHero = "Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt."
+
+if !urlImage
+    -var urlImage = "../../images/Vinh-Ha-Long-Thong-tin-tong-hop-can-biet-930x540 1.jpg"
+
+.banner-hero.hero
+    figure.hero__background
+        +img(urlImage,titleHero)
+    .hero__content
+        h2.hero__title.text-family-bold #{titleHero}
+        p.hero__desc.text-type-big #{descHero}

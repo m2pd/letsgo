@@ -1,0 +1,81 @@
+extends layout/layout
+
+block vars
+    -title = 'Welcome to Gulp Template workflow'
+    -bodyClass = 'home-page'
+
+
+block container
+    main.main-page.page-search
+        .section-hero 
+            .group-hero
+                form
+                    .input-group
+                        input.form-control.form-control-custom(type='text' aria-label='Amount (to the nearest dollar)')
+                        .icon-input
+                            button.btn(type='submit')
+                                span
+                                    i.icon.fa.fa-search(aria-hidden='true')
+                ul.category.category__list
+                    - var list = ["Tour", "Dịch Vụ Lưu Trú","Xe du lịch","Booking guide","Hướng dẫn viên bản địa","Tour giờ chót","Tour thanh lý sang nhượn","Vé và combo du lịch"]
+                        each item in list
+                            li.category__item
+                                +link('#') 
+                                    | #{item}
+        -var titleHero = 'Việt Nam'
+        -var descHero = 'Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt.'
+        include blocks/components/hero-banner.pug
+        .section-search 
+            .container
+                .section-search__body 
+                    .section-search__aside
+                        - 
+                            var listDataAside = [
+                                'Miền Nam',
+                                'Miền Bắc',
+                                'Miền Trung',
+                                'Mũi Né',
+                                'Nha Trang',
+                                'Phú Quốc',
+                                'Tây Nguyên',
+                                'Vũng Tàu',
+                                'Đà Lạt',
+                                'Đà Nẵng',
+                                'Côn Đảo',
+                                'Hà Giang',
+                            ]
+                        include blocks/components/aside-left.pug
+                    .section-search__data
+                        -var isBorver = true;
+                        -var isBoxShadow = true;
+                        each val in [1, 2, 3, 4, 5,6,7,8,1, 2, 3, 4, 5,6,7,8,1, 2, 3, 4, 5,6,7,8,1, 2, 3, 4, 5,6,7,8,]
+                            +gallerxyFeatureType3()
+                .d-flex.justify-content-center
+                    nav(aria-label='Page navigation example')
+                        ul.pagination
+                            li.page-item
+                                a.page-link(href='#' aria-label='Previous')
+                                    span(aria-hidden='true') &laquo;
+                                    span.sr-only Previous
+                            li.page-item
+                                a.page-link(href='#') 1
+                            li.page-item
+                                a.page-link(href='#') 2
+                            li.page-item
+                                a.page-link(href='#') 3
+                            li.page-item
+                                a.page-link(href='#') 4
+                            li.page-item
+                                a.page-link(href='#') ...
+                            li.page-item
+                                a.page-link(href='#') 9
+                            li.page-item
+                                a.page-link(href='#') 10
+                            li.page-item
+                                a.page-link(href='#' aria-label='Next')
+                                    span(aria-hidden='true') &raquo;
+                                    span.sr-only Next
+
+
+        include blocks/components/more-info.pug
+
