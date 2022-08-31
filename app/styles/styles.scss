@@ -9,6 +9,7 @@
 @import 'pages/home';
 @import 'pages/destop-2';
 @import 'pages/destop-3';
+@import 'pages/destop-4';
 
 @import 'layout/structure';
 @import 'layout/header';
@@ -20,6 +21,8 @@
 @import 'components/hero-banner';
 @import 'components/aside-left';
 @import 'components/more-info';
+@import 'components/breadcrumb';
+@import 'components/dynamic-content';
 
 @import 'vendors/fontawesome';
 @import 'vendors/animated';

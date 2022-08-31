@@ -1,0 +1,22 @@
+.breadcrumb {
+  margin-top: 36px;
+  margin-bottom: 60px;
+  background-color: #fff;
+
+  .breadcrumb-item + .breadcrumb-item::before {
+    content: '\f0da';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .breadcrumb-item {
+    a {
+      color: $color-black;
+    }
+  }
+  .breadcrumb-item.active {
+    font-weight: 900;
+  }
+}

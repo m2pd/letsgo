@@ -34,6 +34,12 @@
   font-style: normal;
   src: url("../../fonts/Montserrat-Black.ttf") format("truetype"); }
 
+@font-face {
+  font-family: 'Montserrat-ExtraBold';
+  font-weight: bold;
+  font-style: normal;
+  src: url("../../fonts/Montserrat-ExtraBold.ttf") format("truetype"); }
+
 .text-menu {
   font-weight: 700;
   font-size: 20px;
@@ -119,6 +125,18 @@
       font-size: 20px;
       line-height: 32px; } }
 
+.text-type-semiBig {
+  font-family: 'Montserrat-Medium';
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px; }
+
+.text-type-large {
+  font-family: 'Montserrat-Bold';
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px; }
+
 .text-border-right {
   border-right: 2px solid currentColor;
   padding-right: 8px; }
@@ -174,6 +192,18 @@
 .text-family-black {
   font-family: 'Montserrat-Black';
   font-weight: 900; }
+
+.text-family-ExtraBold {
+  font-family: 'Montserrat-ExtraBold';
+  font-weight: 900; }
+
+.text-color-primary {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2d51ca), to(#2c82ed));
+  background: linear-gradient(180deg, #2d51ca 0%, #2c82ed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent; }
 
 img {
   width: 100%;
@@ -756,6 +786,158 @@ main {
         -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr); } }
 
+.page-search-result {
+  padding-bottom: 10px; }
+  .page-search-result .section-hero {
+    padding: 50px 0; }
+  .page-search-result .margin-section {
+    margin-bottom: 60px; }
+  .page-search-result .margin-title {
+    margin-bottom: 36px; }
+  .page-search-result .infordation_result {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px; }
+    @media only screen and (max-width: 992px) {
+      .page-search-result .infordation_result {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 30px; } }
+  .page-search-result .infordation-detail {
+    -ms-flex-preferred-size: 66.67%;
+    flex-basis: 66.67%; }
+  .page-search-result .aside-detail {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .page-search-result .type__travel ul {
+    border-left: solid 10px #2c6bdc;
+    padding: 0 24px; }
+  .page-search-result .type__travel li {
+    position: relative; }
+    .page-search-result .type__travel li:not(:last-child):before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      border: solid 10px #2c6bdc;
+      background: white;
+      top: -5px;
+      left: -44px;
+      border-radius: 50%;
+      -webkit-box-shadow: 0 0 0 5px fade(black, 10%);
+      box-shadow: 0 0 0 5px fade(black, 10%); }
+    .page-search-result .type__travel li + li {
+      margin-top: 30px; }
+  .page-search-result .type__travel h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px; }
+  .page-search-result .type__travel p {
+    font-size: 18px;
+    margin-top: 10px; }
+  .page-search-result .result-header .text-type-large {
+    margin-bottom: 24px; }
+  .page-search-result .tour-info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 36px; }
+    @media only screen and (max-width: 1200px) {
+      .page-search-result .tour-info {
+        -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 16px; } }
+    @media only screen and (max-width: 992px) {
+      .page-search-result .tour-info {
+        -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 16px; } }
+    .page-search-result .tour-info .tour-detail {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 16px; }
+      .page-search-result .tour-info .tour-detail svg.icon {
+        -ms-flex-preferred-size: 32px;
+        flex-basis: 32px; }
+      .page-search-result .tour-info .tour-detail p {
+        margin-bottom: 0; }
+  .page-search-result .data-list {
+    list-style: auto;
+    list-style-image: url(../../images/icon-park-solid_correct.svg);
+    padding-left: 30px; }
+    .page-search-result .data-list .data-item {
+      padding-left: 10px; }
+      .page-search-result .data-list .data-item:not(:last-child) {
+        margin-bottom: 20px; }
+  .page-search-result .box-service {
+    padding: 20px; }
+    .page-search-result .box-service p {
+      margin-bottom: 12px; }
+    .page-search-result .box-service .group-data {
+      margin-bottom: 42px; }
+  .page-search-result .type-number .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%; }
+    .page-search-result .type-number .form-group .group-label {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0 20px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .page-search-result .type-number .form-group .btn-primary-custom {
+      padding: 0.5rem 1rem; }
+    .page-search-result .type-number .form-group .input-group {
+      width: 20%;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+      flex: 0 0 40%; }
+  .page-search-result .color-danger {
+    color: #da0710; }
+  .page-search-result .box-item-info {
+    padding: 15px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .page-search-result .box-item-info .box-price {
+      margin-top: 30px;
+      margin-bottom: 30px; }
+      .page-search-result .box-item-info .box-price .text-type-title {
+        font-size: 21px;
+        font-family: 'Montserrat'; }
+  .page-search-result .box-copy-data .btn-copy {
+    padding: 0.75rem 1rem; }
+  .page-search-result .box-share .text-title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px; }
+
 .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1325,6 +1507,9 @@ main {
 
 .hero {
   position: relative; }
+  @media only screen and (max-width: 992px) {
+    .hero {
+      height: 400px; } }
   @media only screen and (max-width: 480px) {
     .hero {
       height: 282px; } }
@@ -1343,13 +1528,13 @@ main {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 40%;
+    width: 80%;
     color: #fff;
     z-index: 10;
     text-align: center; }
     @media only screen and (max-width: 1200px) {
       .hero__content {
-        width: 50%; } }
+        width: 80%; } }
     @media only screen and (max-width: 992px) {
       .hero__content {
         width: 80%; } }
@@ -1360,6 +1545,10 @@ main {
     font-size: 100px;
     line-height: 1.2;
     margin-bottom: 18px; }
+    @media only screen and (max-width: 1300px) {
+      .hero__title {
+        font-size: 80px;
+        line-height: 1; } }
     @media only screen and (max-width: 992px) {
       .hero__title {
         font-size: 80px; } }
@@ -1374,6 +1563,16 @@ main {
     height: 100%; }
     .hero__background img {
       height: 100%; }
+  .hero__desc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; }
+    @media only screen and (max-width: 1300px) {
+      .hero__desc {
+        width: 70%; } }
+    @media only screen and (max-width: 992px) {
+      .hero__desc {
+        width: 80%; } }
 
 input[type='checkbox'].ckb {
   z-index: -1;
@@ -1479,6 +1678,27 @@ input[type='checkbox'].ckb:checked + label::before {
   margin-bottom: 25px;
   border-left: none;
   padding-left: 0; }
+
+.breadcrumb {
+  margin-top: 36px;
+  margin-bottom: 60px;
+  background-color: #fff; }
+  .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: '\f0da';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    padding-right: 1rem;
+    padding-left: 1rem; }
+  .breadcrumb .breadcrumb-item a {
+    color: #050505; }
+  .breadcrumb .breadcrumb-item.active {
+    font-weight: 900; }
+
+.dynamic-content p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px; }
 
 /*!
  * Font Awesome Free 5.0.13 by @fontawesome - https://fontawesome.com

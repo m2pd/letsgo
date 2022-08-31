@@ -260,3 +260,16 @@ window.addEventListener('DOMContentLoaded', function () {
     },
   });
 });
+
+$(document).ready(function () {
+  $("input[name='touchspin']").TouchSpin({
+    min: -1000,
+    max: 1000,
+    step: 50,
+    maxboostedstep: 10000000,
+    // prefix: '$',
+    buttondown_class: 'btn btn-primary btn-primary-custom ',
+    buttonup_class: 'btn btn-primary btn-primary-custom',
+    initval: 200,
+  });
+});

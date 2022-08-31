@@ -1,0 +1,217 @@
+extends layout/layout
+
+block vars
+    -title = 'Welcome to Gulp Template workflow'
+    -bodyClass = 'home-page'
+
+
+block container
+    main.main-page.page-search-result
+        .section-hero 
+            .group-hero
+                form
+                    .input-group
+                        input.form-control.form-control-custom(type='text' aria-label='Amount (to the nearest dollar)')
+                        .icon-input
+                            button.btn(type='submit')
+                                span
+                                    i.icon.fa.fa-search(aria-hidden='true')
+                ul.category.category__list
+                    - var list = ["Tour", "Dịch Vụ Lưu Trú","Xe du lịch","Booking guide","Hướng dẫn viên bản địa","Tour giờ chót","Tour thanh lý sang nhượn","Vé và combo du lịch"]
+                        each item in list
+                            li.category__item
+                                +link('#') 
+                                    | #{item}
+        -var titleHero = 'Phan Thiết - Việt Nam'
+        -var descHero = 'Khám phá những thành phố và các điểm tham quan hàng đầu ở Việt Nam ! Các điểm du lịch tốt nhất trải dài đất nước Việt.'
+        include blocks/components/hero-banner.pug
+        .section-breadcrumb
+            .container
+                include blocks/components/breadcrumb.pug
+
+        .section.section-search-result 
+            .result-header.margin-section 
+                .container
+                    p.text-type-large  Vé Cáp Treo Sun World Bà Nà Hills Đà Nẵng
+                    p.text-type-big
+                        span.text-border-right.mr-2 0 / 0 đánh giá
+                        span 100+ Đã đặt
+            .result-body
+                .container
+                    .infordation_result
+                        .infordation-detail
+                            figure.margin-section 
+                                +img('../../images/LESGO-07 1 (1).jpg','LESGO 01')
+                            .infordation-box.margin-section
+                                p.text-type-large.margin-title  Thông tin
+                                ul.tour-info
+                                    li.tour-detail 
+                                        svg.icon(width='22' height='36' viewbox='0 0 22 36' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M20.82 13.05C21.02 12.23 21.12 11.39 21.12 10.55C21.11 4.74 16.38 0 10.56 0C4.74 0 0 4.74 0 10.56C0 11.4 0.1 12.24 0.3 13.06C0.58 14.77 0.97 16.15 1.45 17.17C2.49 19.35 6.85 26.54 8.86 29.82C6.15 30.16 4.89 31.33 4.89 32.43C4.89 33.74 6.66 35.14 10.56 35.14C14.45 35.14 16.23 33.73 16.23 32.43C16.23 31.33 14.97 30.17 12.26 29.82C14.26 26.54 18.63 19.35 19.67 17.17C20.15 16.15 20.53 14.77 20.82 13.05ZM14.59 32.42C14.48 32.73 13.12 33.5 10.56 33.5C7.97 33.5 6.61 32.71 6.52 32.43C6.59 32.16 7.71 31.49 9.81 31.36C9.83 31.4 9.85 31.43 9.86 31.45C10.01 31.69 10.27 31.84 10.55 31.84C10.83 31.84 11.1 31.69 11.24 31.45C11.25 31.43 11.27 31.4 11.29 31.36C13.38 31.49 14.49 32.14 14.59 32.42ZM2.92 16.46C2.51 15.59 2.15 14.31 1.9 12.76C1.9 12.74 1.89 12.72 1.89 12.7C1.72 12 1.63 11.28 1.63 10.56C1.63 5.64 5.63 1.63 10.56 1.63C15.48 1.63 19.49 5.63 19.49 10.56C19.49 11.28 19.4 12 19.23 12.7C19.22 12.72 19.22 12.74 19.22 12.76C18.97 14.31 18.61 15.59 18.2 16.46C17.15 18.66 12.37 26.51 10.57 29.46C8.75 26.51 3.97 18.66 2.92 16.46Z' fill='#272525')
+                                            path(d='M10.5601 4.58997C7.44014 4.58997 4.89014 7.12997 4.89014 10.26C4.89014 13.38 7.43014 15.92 10.5601 15.92C13.6801 15.92 16.2301 13.38 16.2301 10.26C16.2201 7.12997 13.6801 4.58997 10.5601 4.58997ZM6.52014 10.25C6.52014 8.01997 8.33014 6.20997 10.5601 6.20997C12.7901 6.20997 14.6001 8.01997 14.6001 10.25C14.6001 12.48 12.7901 14.29 10.5601 14.29C8.33014 14.29 6.52014 12.48 6.52014 10.25Z' fill='#272525')
+                                        p.text-type-semiBig Thông tin tour
+                                    li.tour-detail 
+                                        svg.icon(width='39' height='32' viewbox='0 0 39 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M17.5202 0C17.0702 0 16.7002 0.37 16.7002 0.81V31.03C16.7002 31.48 17.0702 31.85 17.5202 31.85H20.8802C21.3302 31.85 21.7002 31.48 21.7002 31.03V0.81C21.7002 0.37 21.3302 0 20.8802 0H17.5202ZM20.0702 30.22H18.3402V1.63H20.0702V30.22Z' fill='#272525')
+                                            path(d='M35.2798 18.44L38.1298 15.91C38.2998 15.76 38.3998 15.53 38.3998 15.3C38.3998 15.07 38.2998 14.84 38.1298 14.69L35.2798 12.16C35.1298 12.03 34.9398 11.95 34.7398 11.95H23.3298C22.8798 11.95 22.5098 12.32 22.5098 12.76V17.81C22.5098 18.26 22.8798 18.63 23.3298 18.63H34.7398C34.9398 18.64 35.1298 18.57 35.2798 18.44ZM24.1398 13.59H34.4298L36.3598 15.3L34.4298 17.01H24.1398V13.59Z' fill='#272525')
+                                            path(d='M23.3298 3.69994C22.8798 3.69994 22.5098 4.06994 22.5098 4.51994V9.56994C22.5098 10.0199 22.8798 10.3799 23.3298 10.3799H34.7398C34.9398 10.3799 35.1298 10.3099 35.2798 10.1799L38.1298 7.64994C38.2998 7.49994 38.3998 7.26994 38.3998 7.03994C38.3998 6.80994 38.2998 6.57994 38.1298 6.42994L35.2798 3.89994C35.1298 3.76994 34.9398 3.68994 34.7398 3.68994H23.3298V3.69994ZM24.1398 8.74994V5.32994H34.4298L36.3598 7.03994L34.4298 8.74994H24.1398Z' fill='#272525')
+                                            path(d='M3.13 10.1799C3.28 10.3099 3.47 10.3799 3.67 10.3799H15.08C15.53 10.3799 15.9 10.0099 15.9 9.56994V4.50994C15.9 4.05994 15.53 3.68994 15.08 3.68994H3.67C3.47 3.68994 3.28 3.75994 3.13 3.89994L0.27 6.42994C0.1 6.57994 0 6.79994 0 7.03994C0 7.26994 0.1 7.49994 0.27 7.64994L3.13 10.1799ZM14.27 5.32994V8.74994H3.98L2.04 7.03994L3.97 5.32994H14.27Z' fill='#272525')
+                                        p.text-type-semiBig Điểm đến : Hội An
+                                    li.tour-detail 
+                                        svg.icon(width='32' height='32' viewbox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z' fill='black')
+                                            path(d='M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z' fill='black')
+                                        p.text-type-semiBig Thời gian chuyến đi 
+                                    li.tour-detail 
+                                        svg.icon(width='22' height='36' viewbox='0 0 22 36' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M20.82 13.05C21.02 12.23 21.12 11.39 21.12 10.55C21.11 4.74 16.38 0 10.56 0C4.74 0 0 4.74 0 10.56C0 11.4 0.1 12.24 0.3 13.06C0.58 14.77 0.97 16.15 1.45 17.17C2.49 19.35 6.85 26.54 8.86 29.82C6.15 30.16 4.89 31.33 4.89 32.43C4.89 33.74 6.66 35.14 10.56 35.14C14.45 35.14 16.23 33.73 16.23 32.43C16.23 31.33 14.97 30.17 12.26 29.82C14.26 26.54 18.63 19.35 19.67 17.17C20.15 16.15 20.53 14.77 20.82 13.05ZM14.59 32.42C14.48 32.73 13.12 33.5 10.56 33.5C7.97 33.5 6.61 32.71 6.52 32.43C6.59 32.16 7.71 31.49 9.81 31.36C9.83 31.4 9.85 31.43 9.86 31.45C10.01 31.69 10.27 31.84 10.55 31.84C10.83 31.84 11.1 31.69 11.24 31.45C11.25 31.43 11.27 31.4 11.29 31.36C13.38 31.49 14.49 32.14 14.59 32.42ZM2.92 16.46C2.51 15.59 2.15 14.31 1.9 12.76C1.9 12.74 1.89 12.72 1.89 12.7C1.72 12 1.63 11.28 1.63 10.56C1.63 5.64 5.63 1.63 10.56 1.63C15.48 1.63 19.49 5.63 19.49 10.56C19.49 11.28 19.4 12 19.23 12.7C19.22 12.72 19.22 12.74 19.22 12.76C18.97 14.31 18.61 15.59 18.2 16.46C17.15 18.66 12.37 26.51 10.57 29.46C8.75 26.51 3.97 18.66 2.92 16.46Z' fill='#272525')
+                                            path(d='M10.5601 4.58997C7.44014 4.58997 4.89014 7.12997 4.89014 10.26C4.89014 13.38 7.43014 15.92 10.5601 15.92C13.6801 15.92 16.2301 13.38 16.2301 10.26C16.2201 7.12997 13.6801 4.58997 10.5601 4.58997ZM6.52014 10.25C6.52014 8.01997 8.33014 6.20997 10.5601 6.20997C12.7901 6.20997 14.6001 8.01997 14.6001 10.25C14.6001 12.48 12.7901 14.29 10.5601 14.29C8.33014 14.29 6.52014 12.48 6.52014 10.25Z' fill='#272525')
+                                        p.text-type-semiBig Thông tin tour
+                                    li.tour-detail 
+                                        svg.icon(width='39' height='32' viewbox='0 0 39 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M17.5202 0C17.0702 0 16.7002 0.37 16.7002 0.81V31.03C16.7002 31.48 17.0702 31.85 17.5202 31.85H20.8802C21.3302 31.85 21.7002 31.48 21.7002 31.03V0.81C21.7002 0.37 21.3302 0 20.8802 0H17.5202ZM20.0702 30.22H18.3402V1.63H20.0702V30.22Z' fill='#272525')
+                                            path(d='M35.2798 18.44L38.1298 15.91C38.2998 15.76 38.3998 15.53 38.3998 15.3C38.3998 15.07 38.2998 14.84 38.1298 14.69L35.2798 12.16C35.1298 12.03 34.9398 11.95 34.7398 11.95H23.3298C22.8798 11.95 22.5098 12.32 22.5098 12.76V17.81C22.5098 18.26 22.8798 18.63 23.3298 18.63H34.7398C34.9398 18.64 35.1298 18.57 35.2798 18.44ZM24.1398 13.59H34.4298L36.3598 15.3L34.4298 17.01H24.1398V13.59Z' fill='#272525')
+                                            path(d='M23.3298 3.69994C22.8798 3.69994 22.5098 4.06994 22.5098 4.51994V9.56994C22.5098 10.0199 22.8798 10.3799 23.3298 10.3799H34.7398C34.9398 10.3799 35.1298 10.3099 35.2798 10.1799L38.1298 7.64994C38.2998 7.49994 38.3998 7.26994 38.3998 7.03994C38.3998 6.80994 38.2998 6.57994 38.1298 6.42994L35.2798 3.89994C35.1298 3.76994 34.9398 3.68994 34.7398 3.68994H23.3298V3.69994ZM24.1398 8.74994V5.32994H34.4298L36.3598 7.03994L34.4298 8.74994H24.1398Z' fill='#272525')
+                                            path(d='M3.13 10.1799C3.28 10.3099 3.47 10.3799 3.67 10.3799H15.08C15.53 10.3799 15.9 10.0099 15.9 9.56994V4.50994C15.9 4.05994 15.53 3.68994 15.08 3.68994H3.67C3.47 3.68994 3.28 3.75994 3.13 3.89994L0.27 6.42994C0.1 6.57994 0 6.79994 0 7.03994C0 7.26994 0.1 7.49994 0.27 7.64994L3.13 10.1799ZM14.27 5.32994V8.74994H3.98L2.04 7.03994L3.97 5.32994H14.27Z' fill='#272525')
+                                        p.text-type-semiBig Điểm đến : Hội An
+                                    li.tour-detail 
+                                        svg.icon(width='32' height='32' viewbox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M16 30C13.2311 30 10.5243 29.1789 8.22202 27.6406C5.91973 26.1022 4.12532 23.9157 3.06569 21.3576C2.00607 18.7994 1.72882 15.9845 2.26901 13.2687C2.80921 10.553 4.14258 8.05845 6.10051 6.10051C8.05845 4.14258 10.553 2.80921 13.2687 2.26901C15.9845 1.72882 18.7994 2.00607 21.3576 3.06569C23.9157 4.12532 26.1022 5.91973 27.6406 8.22202C29.1789 10.5243 30 13.2311 30 16C30 19.713 28.525 23.274 25.8995 25.8995C23.274 28.525 19.713 30 16 30ZM16 4.00001C13.6266 4.00001 11.3066 4.70379 9.33316 6.02237C7.35977 7.34095 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.69361 20.6689 5.83649 22.8071 7.51472 24.4853C9.19296 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2325 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 12.8174 26.7357 9.76516 24.4853 7.51472C22.2348 5.26429 19.1826 4.00001 16 4.00001Z' fill='black')
+                                            path(d='M20.59 22L15 16.41V7H17V15.58L22 20.59L20.59 22Z' fill='black')
+                                        p.text-type-semiBig Thời gian chuyến đi 
+
+
+                            .box-data.margin-section
+                                p.text-title.margin-title Giới thiệu
+                                .dynamic-content
+                                    .text-desc
+                                        p Tặng voucher buffet trưa trị giá 260,000 VND, sử dụng tại nhà hàng Beer Plaza (11:00 - 15:00). Áp dụng cho khách tham quan Bà Nà Hills từ ngày 18/3/2022 đến ngày 24/4/2022
+
+                                        p Vui lòng kiểm tra lịch vận hành cáp treo trước khi mua vé!
+
+                                        p Đến Bà Nà Hills để trải nghiệm tuyến cáp treo thuộc top 10 thế giới với quang cảnh hùng vĩ từ đỉnh núi Chúa
+
+                                        p Chụp ảnh tại Cầu Vàng, cây cầu đi bộ ấn tượng nhất thế giới với khung cảnh tuyệt vời
+
+                                        p Chiêm ngưỡng công trình kiến trúc đặc sắc của làng Pháp cổ kính cùng không gian văn hoá linh thiêng
+
+                                        p Khám phá Bà Nà Hills trong 01 ngày cùng LESGO với bí kíp siêu hữu ích
+
+                                        p Chọn ngay các combo độc quyền với xe đưa đón khứ hồi Đà Nẵng, thuyền thúng dừa và thuyền sông Hoài ở Hội An để có kì nghỉ hoàn hảo
+
+                                        p Vui lòng xem các hướng dẫn khi mua hàng và thanh toán trên LESGO: Cách Mua Hàng và Sử Dụng Mã Giảm Giá; Cách Thanh toán qua Ví MoMo và Thẻ Ngân Hàng
+                                    button.btn.btn-outline-primary.text-type-medium.mr-3(type='button')
+                                        span.text-family-SemiBold XEM THÊM 
+                            .box-data.margin-section
+                                p.text-title.margin-title Chuyến đi đã bao gồm
+                                .dynamic-content
+                                    ul.data-list
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Hướng dẫn nói - Tiếng Anh
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Nước giải khát
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Rider (Aodai rider)
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Nếm thử đồ ăn từ 6-7 món ăn địa phương tại 5 điểm dừng ăn uống
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Bảo hiểm do nhà điều hành cung cấp
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Hướng dẫn chuyên nghiệp
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Mũ bảo hiểm
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Xe máy
+                                        li.data-item.data-item--check 
+                                            h4.text-type-semiBig Mũ bảo hiểm
+
+                            .box-service.box-shadow-item.margin-section
+                                .service-content
+                                    .group-data
+                                        p.text-type-semibold.text-family-SemiBold Vui lòng chọn ngày & gói dịch vụ
+                                        p.text-type-big Xin chọn ngày tham gia
+                                        button.btn.btn-primary.text-type-medium.mr-3(type='button')
+                                            span.text-family-SemiBold Xem trạng thái dịch vụ
+
+                                    .type-service 
+                                        p.text-type-big Loại gói dịch vụ
+                                        p.text-type-semibold.text-family-SemiBold Vé Cáp Treo Sun World Bà Nà Hills Đà Nẵng
+
+                                    .type-number
+                                        p.text-type-big Số lượng
+                                        form.form-horizontal(role='form')
+                                            .form-group.box-shadow-item
+                                                .group-label
+                                                    label.control-label(for='touchspin') Số lượng
+                                                    label.text-type-semibold.text-family-SemiBold.control-label(for='touchspin') 800.000đ
+
+                                                input#touchspin.form-control.form-control-custom(type='text' name='touchspin')
+                                    p.text-type-large.text-family-ExtraBold.color-danger 700.000đ
+                                    .type__cotnact 
+                                        button.btn.btn-danger.text-type-medium.mr-3(type='button')
+                                            span.text-family-SemiBold CHAT NGAY 
+                                        button.btn.btn-primary.text-type-medium(type='button') 
+                                            span.text-family-SemiBold 1 đánh giá
+                            .box-timeline
+                                .type__travel
+                                    h2.text-title.margin-title Hành trình
+                                    ul
+                                        li
+                                            p  08h00: Khởi hành đi Cần Giờ. Đến chân cầu Dần Xây, quý khách sẽ dừng chân và thưởng thức nước mía.
+
+                                        li
+                                            p Buổi trưa
+                                            p Ăn trưa tại Phương Nam resort. Nghỉ trưa ghế bố. Tắm tự do (hồ bơi nước ngọt). Đi dạo và chụp ảnh lưu niệm tại resort.
+
+                                        li
+                                            p Buổi chiều
+                                            p Đến bãi biển 30/4: Tham quan quầy bán hàng lưu niệm Tham quan và mua hải sản tại chợ hải sản Cần Giờ 
+                                        li
+                                            a xem thêm
+                        .aside-detail
+                            .box-item-info.box-shadow-item.box-border-item
+                                p.text-type-title.mb-3 Nguyễn Hoài Thương
+                                p.text-type-big.mb-3
+                                    span.text-border-right.mr-2 0 / 0 đánh giá
+                                    span 35 chuyến đi
+                                button.text-family-SemiBold.btn.btn-outline-success(type='button') Chat ngay
+                                .box-price
+                                    span.text-type-title  Giá chỉ từ
+                                    p.text-type-large 800.000đ
+                                button.btn.btn-primary.text-family-SemiBold.text-type-semibold.mb-3(type='button') Chọn các gói dịch vụ
+                                .box-copy-data.mb-4
+                                    .input-group
+                                        .input-group-prepend
+                                            button.btn.btn-secondary.btn-copy(type='button') Sao chép
+                                        input.form-control(type='text' value='www.lesgo.vn/chiasengay.....wwsjcnonon' placeholder='' aria-label='' aria-describedby='basic-addon1')
+                                .box-share 
+                                    p.text-title Chia sẻ ngay
+                                    .socials
+                                        +link('#').icon.item-transform-top
+                                            +img('../../images/image 3.png', 'social')
+                                        +link('#').icon.item-transform-top
+                                            +img('../../images/image 13.png', 'social')
+                                        +link('#').icon.item-transform-top
+                                            +img('../../images/image 5.png', 'social')
+
+
+
+
+        .section.section-feature-guideline
+            - var titleFearure = 'Guide đề xuất';
+            - var isPagiantion = true;
+            - var isviewMore = true;
+            - var swiperStyle2 = true;
+            include blocks/components/swiper-slider-feature-2.pug
+
+        //- Box comment
+        .section.section-comment
+            .container
+                include blocks/components/box-comment.pug
+
+        .section.section-feature-guideline
+            - var titleFearure = 'Có thể bạn sẽ thích';
+            - var isPagiantion = true;
+            - var isviewMore = true;
+            - var swiperStyle2 = true;
+            include blocks/components/swiper-slider-feature-2.pug
