@@ -924,13 +924,21 @@ main {
   .page-search-result .box-item-info {
     padding: 15px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    margin-bottom: 30px; }
     .page-search-result .box-item-info .box-price {
       margin-top: 30px;
       margin-bottom: 30px; }
       .page-search-result .box-item-info .box-price .text-type-title {
         font-size: 21px;
         font-family: 'Montserrat'; }
+    .page-search-result .box-item-info .icon {
+      color: #2c6bdc; }
+    .page-search-result .box-item-info #accordion .card {
+      border: none;
+      cursor: pointer; }
+      .page-search-result .box-item-info #accordion .card .card-header {
+        background-color: transparent; }
   .page-search-result .box-copy-data .btn-copy {
     padding: 0.75rem 1rem; }
   .page-search-result .box-share .text-title {

@@ -167,6 +167,7 @@
   .box-item-info {
     padding: 15px;
     box-sizing: border-box;
+    margin-bottom: 30px;
 
     .box-price {
       margin-top: 30px;
@@ -175,6 +176,20 @@
       .text-type-title {
         font-size: 21px;
         font-family: 'Montserrat';
+      }
+    }
+    .icon {
+      color: $color-primary;
+    }
+
+    #accordion {
+      .card {
+        border: none;
+        cursor: pointer;
+
+        .card-header {
+          background-color: transparent;
+        }
       }
     }
   }
